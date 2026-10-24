@@ -1,5 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException, status
-from fastapi.responses import StreamingResponse
+from fastapi import APIRouter, Depends, HTTPException, status, Response
 from sqlalchemy.orm import Session
 from sqlalchemy import desc
 
@@ -25,8 +24,8 @@ def export_report_pdf(
     pdf_buffer = export_service.generate_report_pdf(report)
     filename = f"Informe_{report.code}.pdf"
 
-    return StreamingResponse(
-        pdf_buffer,
+    return Response(
+        content=pdf_buffer.getvalue(),
         media_type="application/pdf",
         headers={"Content-Disposition": f"inline; filename={filename}"}
     )
@@ -41,8 +40,8 @@ def export_reports_excel(
     excel_buffer = export_service.generate_excel_export(reports)
     filename = f"Reportes_SST_{reports[0].code if reports else 'export'}.xlsx"
 
-    return StreamingResponse(
-        excel_buffer,
+    return Response(
+        content=excel_buffer.getvalue(),
         media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
         headers={"Content-Disposition": f"attachment; filename={filename}"}
     )
@@ -57,8 +56,8 @@ def export_reports_csv(
     csv_buffer = export_service.generate_csv_export(reports)
     filename = "Reportes_SST_Dataset.csv"
 
-    return StreamingResponse(
-        iter([csv_buffer.getvalue()]),
+    return Response(
+        content=csv_buffer.getvalue(),
         media_type="text/csv; charset=utf-8",
         headers={"Content-Disposition": f"attachment; filename={filename}"}
     )

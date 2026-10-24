@@ -6,7 +6,7 @@ from pathlib import Path
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import JSONResponse, FileResponse, StreamingResponse
+from fastapi.responses import JSONResponse, FileResponse, StreamingResponse, Response
 import qrcode
 
 from app.config import settings
@@ -172,6 +172,5 @@ async def get_qr_code(request: Request, target_url: Optional[str] = None):
     img = qr.make_image(fill_color="#0f172a", back_color="#ffffff")
     buf = io.BytesIO()
     img.save(buf, format="PNG")
-    buf.seek(0)
-    return StreamingResponse(buf, media_type="image/png")
+    return Response(content=buf.getvalue(), media_type="image/png")
 
