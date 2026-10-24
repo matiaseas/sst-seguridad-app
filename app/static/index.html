@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full bg-slate-50">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>SST - Gestión de Condiciones e Incidentes Laborales</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sst: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Chart.js para analítica interactiva -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body class="min-h-full flex flex-col text-slate-800 antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- BARRA DE ACCESO RÁPIDO PARA DEMOSTRACIÓN ACADÉMICA (1-CLICK LOGIN) -->
+  <div id="quick-demo-bar" class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800 flex flex-wrap items-center justify-between gap-2 shadow-sm no-print">
+    <div class="flex items-center gap-2">
+      <span class="inline-block w-2 h-2 rounded-full bg-amber-400"></span>
+      <strong class="text-white font-semibold">Demostración:</strong>
+      <span class="hidden sm:inline text-slate-400">Acceso rápido por rol:</span>
+    </div>
+    <div class="flex items-center gap-1.5 flex-wrap">
+      <button class="btn-quick-login bg-slate-800 hover:bg-slate-700 text-slate-200 px-2.5 py-1 rounded-md border border-slate-700 font-medium transition-colors" data-user="operario1" data-pwd="password123">
+        👷 Carlos (Trabajador)
+      </button>
+      <button class="btn-quick-login bg-slate-800 hover:bg-slate-700 text-sky-300 px-2.5 py-1 rounded-md border border-slate-700 font-medium transition-colors" data-user="seguridad" data-pwd="password123">
+        🛡️ Lic. María (SST)
+      </button>
+      <button class="btn-quick-login bg-slate-800 hover:bg-slate-700 text-amber-300 px-2.5 py-1 rounded-md border border-slate-700 font-medium transition-colors" data-user="admin" data-pwd="password123">
+        ⚙️ Ing. Roberto (Admin)
+      </button>
+      <button id="btn-open-qr-top" class="bg-sky-950 hover:bg-sky-900 text-sky-300 hover:text-white px-2.5 py-1 rounded-md border border-sky-800 font-semibold transition-colors flex items-center gap-1.5 ml-1 sm:ml-2 shadow-xs cursor-pointer">
+        📱 Conectar Celular (QR)
+      </button>
+    </div>
+  </div>
+
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-xs no-print">
+    <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
+      
+      <!-- LOGOTIPO E IDENTIDAD -->
+      <div class="flex items-center gap-3 cursor-pointer" onclick="window.sstGoHome && window.sstGoHome()">
+        <div class="w-10 h-10 rounded-xl bg-slate-900 text-amber-400 flex items-center justify-center font-black text-lg shadow-sm">
+          SST
+        </div>
+        <div>
+          <span class="font-black text-sm tracking-tight text-slate-900 block leading-tight">GESTIÓN DE SEGURIDAD</span>
+          <span class="text-[10px] text-slate-500 uppercase tracking-widest block font-bold">Higiene y Salud Laboral</span>
+        </div>
+      </div>
+
+      <!-- ENLACES DE NAVEGACIÓN SEGÚN ROL -->
+      <nav id="nav-links" class="hidden md:flex items-center gap-1"></nav>
+
+      <!-- AUTENTICACIÓN / USUARIO -->
+      <div id="nav-auth" class="flex items-center gap-2"></div>
+
+    </div>
+  </header>
+
+  <!-- CONTENEDOR PRINCIPAL REACTIVO (SPA) -->
+  <main id="app-main" class="flex-1">
+    <div class="max-w-4xl mx-auto py-16 text-center text-slate-400">
+      Cargando portal SST...
+    </div>
+  </main>
+
+  <!-- PIE DE PÁGINA INSTITUCIONAL -->
+  <footer class="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-500 no-print">
+    <div class="max-w-7xl mx-auto px-4 space-y-2">
+      <p class="font-bold text-slate-700">
+        Aplicación Web para Notificación y Gestión de Condiciones Inseguras e Incidentes
+      </p>
+      <p class="text-slate-400 max-w-xl mx-auto text-[11px]">
+        Proyecto informático independiente para Higiene y Seguridad en el Trabajo. Escenario de pruebas: Taller Industrial de Soldadura y Montaje.
+      </p>
+      <div class="pt-2 text-[10px] text-slate-400">
+        Versión 1.0.0 • Python FastAPI • SQLite WAL • Clean Architecture
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL DE INICIO DE SESIÓN -->
+  <dialog id="modal-login" class="p-0 rounded-2xl max-w-sm w-full shadow-2xl backdrop:bg-slate-950/70 border border-slate-200">
+    <div class="p-6 bg-white">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
+        <h3 class="text-base font-bold text-slate-900">Iniciar Sesión</h3>
+        <button id="btn-close-login" class="text-slate-400 hover:text-slate-600 text-lg font-bold">✕</button>
+      </div>
+
+      <form id="form-login" class="space-y-3 text-xs">
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Nombre de usuario</label>
+          <input type="text" id="login-username" required placeholder="Ej: operario1, seguridad, admin" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 text-xs">
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Contraseña</label>
+          <input type="password" id="login-password" required placeholder="••••••••" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 text-xs">
+        </div>
+
+        <button type="submit" class="touch-btn w-full bg-sky-600 hover:bg-sky-500 text-white font-bold py-2.5 rounded-xl text-xs shadow-sm transition-all mt-2">
+          Ingresar a la Plataforma
+        </button>
+      </form>
+
+      <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-slate-500 text-center">
+        Contraseña demo para todos los usuarios: <code class="font-mono bg-slate-100 px-1 py-0.5 rounded font-bold text-slate-700">password123</code>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- MODAL DE CÓDIGO QR PARA CELULAR -->
+  <dialog id="modal-qr" class="p-0 rounded-2xl max-w-sm w-full shadow-2xl backdrop:bg-slate-950/70 border border-slate-200">
+    <div class="p-6 bg-white text-center">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4 text-left">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center font-bold">
+            📱
+          </div>
+          <div>
+            <h3 class="text-sm font-bold text-slate-900">Conectar Celular vía Wi-Fi</h3>
+            <p class="text-[10px] text-slate-500">Escaneá para reportar desde tu teléfono</p>
+          </div>
+        </div>
+        <button id="btn-close-qr" class="text-slate-400 hover:text-slate-600 text-lg font-bold">✕</button>
+      </div>
+
+      <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-4 flex flex-col items-center justify-center">
+        <div class="bg-white p-2.5 rounded-xl border border-slate-200 shadow-sm inline-block">
+          <img id="qr-img-element" src="/api/system/qr-code" alt="Código QR SST" class="w-52 h-52 object-contain" />
+        </div>
+        
+        <p class="mt-3 text-[11px] font-semibold text-slate-700">
+          Enlace directo en la red local:
+        </p>
+        <a id="qr-link-url" href="#" target="_blank" class="mt-0.5 text-xs font-mono font-bold text-sky-600 hover:underline break-all block px-1">
+          Cargando enlace...
+        </a>
+      </div>
+
+      <div class="mt-4 text-left text-[11px] text-slate-600 space-y-1.5 bg-amber-50/90 border border-amber-200/80 p-3 rounded-xl">
+        <div class="flex items-start gap-1.5">
+          <span class="text-amber-600 font-bold">⚠️</span>
+          <div>
+            <strong class="text-slate-800">Requisito de red:</strong>
+            El celular debe estar conectado a la <strong class="text-slate-900">misma red Wi-Fi</strong> que esta PC.
+          </div>
+        </div>
+        <div class="text-[10px] text-slate-500 pl-4">
+          • Los reportes cargados desde el teléfono se guardan directamente en la base de datos de esta PC en tiempo real.
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- CONTENEDOR DE TOASTS -->
+  <div id="toast-container"></div>
+
+  <!-- SCRIPT PRINCIPAL DE LA SPA -->
+  <script type="module" src="/static/js/app.js"></script>
+  <script>
+    window.sstGoHome = () => {
+      window.dispatchEvent(new CustomEvent('app:go-home'));
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,710 @@
+('D:\\Tuttini\\sst-seguridad-app - '
+ 'copia\\build\\SST_Seguridad\\SST_Seguridad.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True,
+  'SYMLINK': False},
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'D:\\Tuttini\\sst-seguridad-app - copia\\build\\SST_Seguridad\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\build\\SST_Seguridad\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\build\\SST_Seguridad\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\build\\SST_Seguridad\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\build\\SST_Seguridad\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\build\\SST_Seguridad\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_setuptools',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_setuptools.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('run', 'D:\\Tuttini\\sst-seguridad-app - copia\\run.py', 'PYSOURCE'),
+  ('python312.dll',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\python312.dll',
+   'BINARY'),
+  ('select.pyd',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\select.pyd',
+   'EXTENSION'),
+  ('_multiprocessing.pyd',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\_multiprocessing.pyd',
+   'EXTENSION'),
+  ('pyexpat.pyd',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\pyexpat.pyd',
+   'EXTENSION'),
+  ('_ssl.pyd',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\_ssl.pyd',
+   'EXTENSION'),
+  ('_hashlib.pyd',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\_hashlib.pyd',
+   'EXTENSION'),
+  ('unicodedata.pyd',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('_decimal.pyd',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\_decimal.pyd',
+   'EXTENSION'),
+  ('_lzma.pyd',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\_lzma.pyd',
+   'EXTENSION'),
+  ('_bz2.pyd',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\_bz2.pyd',
+   'EXTENSION'),
+  ('_ctypes.pyd',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\_ctypes.pyd',
+   'EXTENSION'),
+  ('_queue.pyd',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\_queue.pyd',
+   'EXTENSION'),
+  ('_socket.pyd',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\_socket.pyd',
+   'EXTENSION'),
+  ('_overlapped.pyd',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\_overlapped.pyd',
+   'EXTENSION'),
+  ('_asyncio.pyd',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\_asyncio.pyd',
+   'EXTENSION'),
+  ('_wmi.pyd',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\_wmi.pyd',
+   'EXTENSION'),
+  ('PIL\\_imagingft.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\PIL\\_imagingft.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imaging.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\PIL\\_imaging.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('markupsafe\\_speedups.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\markupsafe\\_speedups.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('bcrypt\\_bcrypt.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\bcrypt\\_bcrypt.pyd',
+   'EXTENSION'),
+  ('_sqlite3.pyd',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\_sqlite3.pyd',
+   'EXTENSION'),
+  ('sqlalchemy\\engine\\_util_cy.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\sqlalchemy\\engine\\_util_cy.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('sqlalchemy\\engine\\_result_cy.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\sqlalchemy\\engine\\_result_cy.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('sqlalchemy\\engine\\_row_cy.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\sqlalchemy\\engine\\_row_cy.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('sqlalchemy\\sql\\_util_cy.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\sqlalchemy\\sql\\_util_cy.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('sqlalchemy\\sql\\_cache_key_cy.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\sqlalchemy\\sql\\_cache_key_cy.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('sqlalchemy\\engine\\_processors_cy.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\sqlalchemy\\engine\\_processors_cy.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('sqlalchemy\\util\\_immutabledict_cy.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\sqlalchemy\\util\\_immutabledict_cy.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('sqlalchemy\\util\\_collections_cy.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\sqlalchemy\\util\\_collections_cy.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('_uuid.pyd',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\_uuid.pyd',
+   'EXTENSION'),
+  ('PIL\\_webp.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\PIL\\_webp.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imagingtk.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\PIL\\_imagingtk.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_avif.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\PIL\\_avif.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imagingcms.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\PIL\\_imagingcms.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imagingmath.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\PIL\\_imagingmath.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('_elementtree.pyd',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\_elementtree.pyd',
+   'EXTENSION'),
+  ('charset_normalizer\\cd.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\charset_normalizer\\cd.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('charset_normalizer\\md.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\charset_normalizer\\md.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('pydantic_core\\_pydantic_core.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\pydantic_core\\_pydantic_core.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('_zoneinfo.pyd',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\_zoneinfo.pyd',
+   'EXTENSION'),
+  ('websockets\\speedups.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\websockets\\speedups.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('httptools\\parser\\url_parser.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\httptools\\parser\\url_parser.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('httptools\\parser\\parser.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\httptools\\parser\\parser.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('yaml\\_yaml.cp312-win_amd64.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\yaml\\_yaml.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('watchfiles\\_rust_notify.pyd',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\watchfiles\\_rust_notify.pyd',
+   'EXTENSION'),
+  ('api-ms-win-crt-locale-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-crt-locale-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-heap-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-crt-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-convert-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-crt-convert-l1-1-0.dll',
+   'BINARY'),
+  ('VCRUNTIME140.dll',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('api-ms-win-crt-string-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-crt-string-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-runtime-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-crt-runtime-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-process-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-crt-process-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-environment-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-crt-environment-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-math-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-crt-math-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-filesystem-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-crt-filesystem-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-stdio-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-crt-stdio-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-time-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-crt-time-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-conio-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-crt-conio-l1-1-0.dll',
+   'BINARY'),
+  ('libssl-3-x64.dll',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\libssl-3-x64.dll',
+   'BINARY'),
+  ('libcrypto-3-x64.dll',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\libcrypto-3-x64.dll',
+   'BINARY'),
+  ('libffi-8.dll',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\libffi-8.dll',
+   'BINARY'),
+  ('VCRUNTIME140_1.dll',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\VCRUNTIME140_1.dll',
+   'BINARY'),
+  ('api-ms-win-crt-utility-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-crt-utility-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-2-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-synch-l1-2-0.dll',
+   'BINARY'),
+  ('python3.dll',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\python3.dll',
+   'BINARY'),
+  ('sqlite3.dll',
+   'C:\\Users\\matia\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\DLLs\\sqlite3.dll',
+   'BINARY'),
+  ('ucrtbase.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\ucrtbase.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l2-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-file-l2-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-namedpipe-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-namedpipe-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-sysinfo-l1-2-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-sysinfo-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-profile-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-profile-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processenvironment-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-processenvironment-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-timezone-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-timezone-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-localization-l1-2-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-localization-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-util-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-util-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-memory-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-memory-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-fibers-l1-1-1.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-fibers-l1-1-1.dll',
+   'BINARY'),
+  ('api-ms-win-core-errorhandling-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-errorhandling-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-processthreads-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-file-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-libraryloader-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-libraryloader-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-sysinfo-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-sysinfo-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-2-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-file-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-console-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-console-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-synch-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-fibers-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-fibers-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-kernel32-legacy-l1-1-1.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-kernel32-legacy-l1-1-1.dll',
+   'BINARY'),
+  ('api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-heap-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-string-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-string-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-1.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-processthreads-l1-1-1.dll',
+   'BINARY'),
+  ('api-ms-win-core-interlocked-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-interlocked-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-datetime-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-datetime-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-debug-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-debug-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-handle-l1-1-0.dll',
+   'C:\\Program Files\\Eclipse '
+   'Adoptium\\jdk-25.0.2.10-hotspot\\bin\\api-ms-win-core-handle-l1-1-0.dll',
+   'BINARY'),
+  ('app\\static\\css\\styles.css',
+   'D:\\Tuttini\\sst-seguridad-app - copia\\app\\static\\css\\styles.css',
+   'DATA'),
+  ('app\\static\\index.html',
+   'D:\\Tuttini\\sst-seguridad-app - copia\\app\\static\\index.html',
+   'DATA'),
+  ('app\\static\\js\\api.js',
+   'D:\\Tuttini\\sst-seguridad-app - copia\\app\\static\\js\\api.js',
+   'DATA'),
+  ('app\\static\\js\\app.js',
+   'D:\\Tuttini\\sst-seguridad-app - copia\\app\\static\\js\\app.js',
+   'DATA'),
+  ('app\\static\\js\\state.js',
+   'D:\\Tuttini\\sst-seguridad-app - copia\\app\\static\\js\\state.js',
+   'DATA'),
+  ('app\\static\\js\\views\\admin.js',
+   'D:\\Tuttini\\sst-seguridad-app - copia\\app\\static\\js\\views\\admin.js',
+   'DATA'),
+  ('app\\static\\js\\views\\dashboard.js',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\js\\views\\dashboard.js',
+   'DATA'),
+  ('app\\static\\js\\views\\home.js',
+   'D:\\Tuttini\\sst-seguridad-app - copia\\app\\static\\js\\views\\home.js',
+   'DATA'),
+  ('app\\static\\js\\views\\my_reports.js',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\js\\views\\my_reports.js',
+   'DATA'),
+  ('app\\static\\js\\views\\report_detail.js',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\js\\views\\report_detail.js',
+   'DATA'),
+  ('app\\static\\js\\views\\report_form.js',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\js\\views\\report_form.js',
+   'DATA'),
+  ('app\\static\\js\\views\\reports_list.js',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\js\\views\\reports_list.js',
+   'DATA'),
+  ('app\\static\\js\\views\\track.js',
+   'D:\\Tuttini\\sst-seguridad-app - copia\\app\\static\\js\\views\\track.js',
+   'DATA'),
+  ('app\\static\\uploads\\demo_cables_pasillo.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\demo_cables_pasillo.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\demo_charla_asistencia.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\demo_charla_asistencia.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\demo_material_inestable.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\demo_material_inestable.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\demo_pantalla_facial.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\demo_pantalla_facial.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\demo_soldadura_sin_mascara.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\demo_soldadura_sin_mascara.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\evidence_4_ba7318e7.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\evidence_4_ba7318e7.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\evidence_5_4fe442f6.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\evidence_5_4fe442f6.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\evidence_5_6ac9774c.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\evidence_5_6ac9774c.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\evidence_5_7b092015.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\evidence_5_7b092015.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\evidence_5_7bc90735.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\evidence_5_7bc90735.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\evidence_5_942f727b.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\evidence_5_942f727b.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\evidence_5_b4d3ce41.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\evidence_5_b4d3ce41.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\evidence_5_d5aea4be.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\evidence_5_d5aea4be.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\evidence_5_ff42b7e0.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\evidence_5_ff42b7e0.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\report_5_0698b659.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\report_5_0698b659.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\report_5_56ead237.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\report_5_56ead237.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\report_5_66243d7b.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\report_5_66243d7b.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\report_5_66e71a80.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\report_5_66e71a80.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\report_5_9ed323f4.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\report_5_9ed323f4.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\report_5_a668b951.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\report_5_a668b951.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\report_5_c3023e13.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\report_5_c3023e13.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\report_5_c8774c83.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\report_5_c8774c83.jpg',
+   'DATA'),
+  ('app\\static\\uploads\\report_5_f624eeac.jpg',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\app\\static\\uploads\\report_5_f624eeac.jpg',
+   'DATA'),
+  ('certifi\\py.typed',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\certifi\\py.typed',
+   'DATA'),
+  ('certifi\\cacert.pem',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\certifi\\cacert.pem',
+   'DATA'),
+  ('setuptools\\_vendor\\jaraco\\text\\Lorem ipsum.txt',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\text\\Lorem '
+   'ipsum.txt',
+   'DATA'),
+  ('markupsafe-3.0.3.dist-info\\RECORD',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\markupsafe-3.0.3.dist-info\\RECORD',
+   'DATA'),
+  ('markupsafe-3.0.3.dist-info\\METADATA',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\markupsafe-3.0.3.dist-info\\METADATA',
+   'DATA'),
+  ('markupsafe-3.0.3.dist-info\\licenses\\LICENSE.txt',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\markupsafe-3.0.3.dist-info\\licenses\\LICENSE.txt',
+   'DATA'),
+  ('pydantic-2.13.5.dist-info\\INSTALLER',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\pydantic-2.13.5.dist-info\\INSTALLER',
+   'DATA'),
+  ('websockets-17.1.dist-info\\entry_points.txt',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\websockets-17.1.dist-info\\entry_points.txt',
+   'DATA'),
+  ('pydantic-2.13.5.dist-info\\RECORD',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\pydantic-2.13.5.dist-info\\RECORD',
+   'DATA'),
+  ('click-8.5.0.dist-info\\INSTALLER',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\click-8.5.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('click-8.5.0.dist-info\\METADATA',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\click-8.5.0.dist-info\\METADATA',
+   'DATA'),
+  ('websockets-17.1.dist-info\\WHEEL',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\websockets-17.1.dist-info\\WHEEL',
+   'DATA'),
+  ('click-8.5.0.dist-info\\RECORD',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\click-8.5.0.dist-info\\RECORD',
+   'DATA'),
+  ('pydantic-2.13.5.dist-info\\REQUESTED',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\pydantic-2.13.5.dist-info\\REQUESTED',
+   'DATA'),
+  ('markupsafe-3.0.3.dist-info\\WHEEL',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\markupsafe-3.0.3.dist-info\\WHEEL',
+   'DATA'),
+  ('pydantic-2.13.5.dist-info\\licenses\\LICENSE',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\pydantic-2.13.5.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('pydantic-2.13.5.dist-info\\WHEEL',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\pydantic-2.13.5.dist-info\\WHEEL',
+   'DATA'),
+  ('websockets-17.1.dist-info\\top_level.txt',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\websockets-17.1.dist-info\\top_level.txt',
+   'DATA'),
+  ('email_validator-2.3.0.dist-info\\METADATA',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\email_validator-2.3.0.dist-info\\METADATA',
+   'DATA'),
+  ('click-8.5.0.dist-info\\WHEEL',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\click-8.5.0.dist-info\\WHEEL',
+   'DATA'),
+  ('email_validator-2.3.0.dist-info\\licenses\\LICENSE',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\email_validator-2.3.0.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('click-8.5.0.dist-info\\REQUESTED',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\click-8.5.0.dist-info\\REQUESTED',
+   'DATA'),
+  ('markupsafe-3.0.3.dist-info\\REQUESTED',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\markupsafe-3.0.3.dist-info\\REQUESTED',
+   'DATA'),
+  ('pydantic-2.13.5.dist-info\\METADATA',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\pydantic-2.13.5.dist-info\\METADATA',
+   'DATA'),
+  ('websockets-17.1.dist-info\\REQUESTED',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\websockets-17.1.dist-info\\REQUESTED',
+   'DATA'),
+  ('websockets-17.1.dist-info\\METADATA',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\websockets-17.1.dist-info\\METADATA',
+   'DATA'),
+  ('markupsafe-3.0.3.dist-info\\INSTALLER',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\markupsafe-3.0.3.dist-info\\INSTALLER',
+   'DATA'),
+  ('email_validator-2.3.0.dist-info\\entry_points.txt',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\email_validator-2.3.0.dist-info\\entry_points.txt',
+   'DATA'),
+  ('email_validator-2.3.0.dist-info\\WHEEL',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\email_validator-2.3.0.dist-info\\WHEEL',
+   'DATA'),
+  ('email_validator-2.3.0.dist-info\\top_level.txt',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\email_validator-2.3.0.dist-info\\top_level.txt',
+   'DATA'),
+  ('markupsafe-3.0.3.dist-info\\top_level.txt',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\markupsafe-3.0.3.dist-info\\top_level.txt',
+   'DATA'),
+  ('websockets-17.1.dist-info\\INSTALLER',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\websockets-17.1.dist-info\\INSTALLER',
+   'DATA'),
+  ('email_validator-2.3.0.dist-info\\RECORD',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\email_validator-2.3.0.dist-info\\RECORD',
+   'DATA'),
+  ('email_validator-2.3.0.dist-info\\REQUESTED',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\email_validator-2.3.0.dist-info\\REQUESTED',
+   'DATA'),
+  ('websockets-17.1.dist-info\\licenses\\LICENSE',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\websockets-17.1.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('websockets-17.1.dist-info\\RECORD',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\websockets-17.1.dist-info\\RECORD',
+   'DATA'),
+  ('click-8.5.0.dist-info\\licenses\\LICENSE.txt',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\click-8.5.0.dist-info\\licenses\\LICENSE.txt',
+   'DATA'),
+  ('email_validator-2.3.0.dist-info\\INSTALLER',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\.venv\\Lib\\site-packages\\email_validator-2.3.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('base_library.zip',
+   'D:\\Tuttini\\sst-seguridad-app - '
+   'copia\\build\\SST_Seguridad\\base_library.zip',
+   'DATA')],
+ 'python312.dll',
+ False,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)
